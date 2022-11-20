@@ -49,7 +49,7 @@ export const App = () => {
           color: '#010101',
         }}
       >
-        <FriendList friends={friends} />;
+        <FriendList friends={friends} />
       </div>
     </>
   );
