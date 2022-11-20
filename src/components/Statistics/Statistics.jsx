@@ -1,5 +1,5 @@
 export const Statistics = ({ title, stats }) => {
-  console.log({ title, stats });
+  // console.log({ title, stats });
   return (
     <section class="statistics">
       <h2 class="title">Upload stats</h2>
