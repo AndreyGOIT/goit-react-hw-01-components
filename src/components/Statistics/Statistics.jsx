@@ -1,8 +1,10 @@
+import PropTypes from 'prop-types';
+
 export const Statistics = ({ title, stats }) => {
-  // console.log({ title, stats });
+  console.log({ title, stats });
   return (
     <section class="statistics">
-      <h2 class="title">Upload stats</h2>
+      <h2 class="title">{title}</h2>
 
       <ul class="stat-list">
         <li class="item">
@@ -24,4 +26,11 @@ export const Statistics = ({ title, stats }) => {
       </ul>
     </section>
   );
+};
+
+Statistics.propTypes = {
+  stats: PropTypes.shape({
+    percentage: PropTypes.number,
+  }),
+  title: PropTypes.string,
 };
