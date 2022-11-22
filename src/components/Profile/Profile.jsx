@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import styles from './Profile.module.css';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   console.log(username, tag, location, avatar, stats);
   return (
-    <div class="profile">
+    <div className={styles.sectionProfile}>
       <div class="description">
         <img src={avatar} alt="User avatar" class="avatar" />
         <p class="name">{username}</p>

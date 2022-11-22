@@ -1,0 +1,11 @@
+.sectionProfile {
+  margin: '0 auto';
+  width: '400px';
+  height: '200vh';
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+  font-size: 40;
+  color: 'gray';
+  background-color: 'gray';
+}

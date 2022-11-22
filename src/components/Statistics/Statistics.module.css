@@ -1,0 +1,32 @@
+.statisticsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  background-color: lightgray;
+}
+.insideBox {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.titleBox {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: gray;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.statisticsBlocks {
+  display: flex;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
