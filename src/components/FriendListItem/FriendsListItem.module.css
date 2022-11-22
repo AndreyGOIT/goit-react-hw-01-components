@@ -1,0 +1,21 @@
+.item {
+  display: flex;
+  width: 150px;
+}
+.name {
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.statusOn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
+}
+.statusOff {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+}

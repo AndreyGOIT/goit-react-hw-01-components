@@ -23,28 +23,10 @@ export const App = () => {
         <Statistics title="Upload stats" stats={data} />
         {/* <Statistics stats={data} /> */}
       </div>
-      <div
-        style={{
-          height: '200vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: 40,
-          color: '#010101',
-        }}
-      >
+      <div>
         <FriendList friends={friends} />
       </div>
-      <div
-        style={{
-          height: '200vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: 40,
-          color: '#010101',
-        }}
-      >
+      <div>
         <TransactionHistory items={transactions} />
       </div>
     </>

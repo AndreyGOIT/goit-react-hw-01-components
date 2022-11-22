@@ -1,12 +1,22 @@
 import PropTypes from 'prop-types';
 import { bool } from 'prop-types';
+import styles from './FriendsListItem.module.css';
 
 export const FriendListItem = ({ avatar, name, isOnLine, id }) => {
+  console.log({ isOnLine });
   return (
-    <li class="item" key={id}>
-      <span class="status">{isOnLine}</span>
-      <img class="avatar" src={avatar} alt="User avatar" width="48" />
-      <p class="name">{name}</p>
+    <li className={styles.item} key={id}>
+      <span className={isOnLine ? styles.statusOn : styles.statusOff}>
+        {isOnLine}
+      </span>
+      <img
+        class="avatar"
+        src={avatar}
+        alt="User avatar"
+        width="48"
+        height="48"
+      />
+      <p className={styles.name}>{name}</p>
     </li>
   );
 };
