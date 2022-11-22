@@ -4,8 +4,7 @@ export const Statistics = ({ title, stats }) => {
   console.log({ title, stats });
   return (
     <section class="statistics">
-      <h2 class="title">{title}</h2>
-
+      {title !== undefined && <h2 class="title">{title}</h2>}
       <ul class="stat-list">
         <li class="item">
           <span class="label">.docx</span>
@@ -28,9 +27,11 @@ export const Statistics = ({ title, stats }) => {
   );
 };
 
-Statistics.propTypes = {
-  stats: PropTypes.shape({
-    percentage: PropTypes.number,
+Statistics.propTypes = PropTypes.objectOf({
+  stats: PropTypes.arrayOf({
+    id: PropTypes.string,
+    label: PropTypes.string,
+    percentage: PropTypes.number.isRequired,
   }),
-  title: PropTypes.string,
-};
+  title: PropTypes.string.isRequired,
+});

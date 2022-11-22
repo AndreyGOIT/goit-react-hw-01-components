@@ -32,7 +32,7 @@ TransactionHistory.propTypes = PropTypes.arrayOf(
   PropTypes.objectOf({
     amount: PropTypes.number,
     currency: PropTypes.string,
-    id: PropTypes.string,
+    id: PropTypes.string.isRequired,
     type: PropTypes.string,
   })
 );
