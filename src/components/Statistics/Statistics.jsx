@@ -10,19 +10,19 @@ export const Statistics = ({ title, stats }) => {
         <ul className={styles.statisticsBlocks}>
           <li className={styles.item}>
             <span className={styles.label}>.docx</span>
-            <span class="percentage">{stats[0].percentage}</span>
+            <span class="percentage">{stats[0].percentage}%</span>
           </li>
           <li className={styles.item}>
             <span class="label">.mp3</span>
-            <span class="percentage">{stats[2].percentage}</span>
+            <span class="percentage">{stats[2].percentage}%</span>
           </li>
           <li className={styles.item}>
             <span class="label">.pdf</span>
-            <span class="percentage">{stats[1].percentage}</span>
+            <span class="percentage">{stats[1].percentage}%</span>
           </li>
           <li className={styles.item}>
             <span class="label">.mp4</span>
-            <span class="percentage">{stats[3].percentage}</span>
+            <span class="percentage">{stats[3].percentage}%</span>
           </li>
         </ul>
       </div>

@@ -10,7 +10,7 @@
   background-color: rgb(215, 217, 218);
 }
 .insideBox {
-  width: 250px;
+  width: 280px;
   display: flex;
   flex-direction: column;
 }
@@ -23,6 +23,7 @@
   margin-bottom: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: medium;
   text-transform: uppercase;
 }
 .statisticsBlocks {
@@ -35,6 +36,8 @@
 .item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  color: white;
+  background-color: red;
 }
