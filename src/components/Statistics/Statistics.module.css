@@ -3,11 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 400px;
-  background-color: lightgray;
+  background-color: rgb(215, 217, 218);
 }
 .insideBox {
-  width: 200px;
+  width: 250px;
   display: flex;
   flex-direction: column;
 }
@@ -18,11 +21,16 @@
   color: gray;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
 }
 .statisticsBlocks {
   display: flex;
+  justify-content: center;
+  padding-left: 0px;
+  /* width: 250px; */
+  margin: 0px;
 }
 .item {
   display: flex;
