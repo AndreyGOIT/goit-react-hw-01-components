@@ -9,13 +9,7 @@ export const FriendListItem = ({ avatar, name, isOnLine, id }) => {
       <span className={isOnLine ? styles.statusOn : styles.statusOff}>
         {isOnLine}
       </span>
-      <img
-        class="avatar"
-        src={avatar}
-        alt="User avatar"
-        width="48"
-        height="48"
-      />
+      <img className={styles.avatar} src={avatar} alt="User avatar" />
       <p className={styles.name}>{name}</p>
     </li>
   );

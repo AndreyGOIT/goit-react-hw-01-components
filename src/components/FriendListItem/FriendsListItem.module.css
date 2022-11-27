@@ -1,9 +1,22 @@
+ul {
+  margin: 0px auto 50px auto;
+}
 .item {
   display: flex;
-  width: 150px;
+  flex-direction: row;
+  gap: 10px;
+  width: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.avatar {
+  width: 55px;
+  height: 55px;
+  border: 1px solid;
+  border-radius: 4px;
 }
 .name {
-  margin: 0 auto;
+  margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
 }
