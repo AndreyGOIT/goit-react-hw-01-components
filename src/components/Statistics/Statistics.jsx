@@ -8,19 +8,19 @@ export const Statistics = ({ title, stats }) => {
       <div className={styles.insideBox}>
         {title && <h2 className={styles.titleBox}>{title}</h2>}
         <ul className={styles.statisticsBlocks}>
-          <li className={styles.item}>
+          <li className={(styles.item, styles.aqua)}>
             <span className={styles.label}>.docx</span>
             <span class="percentage">{stats[0].percentage}%</span>
           </li>
-          <li className={styles.item}>
+          <li className={(styles.item, styles.violet)}>
             <span class="label">.mp3</span>
             <span class="percentage">{stats[2].percentage}%</span>
           </li>
-          <li className={styles.item}>
+          <li className={(styles.item, styles.red)}>
             <span class="label">.pdf</span>
             <span class="percentage">{stats[1].percentage}%</span>
           </li>
-          <li className={styles.item}>
+          <li className={(styles.item, styles.lazur)}>
             <span class="label">.mp4</span>
             <span class="percentage">{stats[3].percentage}%</span>
           </li>
