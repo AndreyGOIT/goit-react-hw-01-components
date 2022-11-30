@@ -9,7 +9,7 @@ export const FriendList = ({ friends }) => {
       {friends.map(friend => (
         <FriendListItem
           key={friend.id}
-          isOnLine={friend.isOnLine}
+          isOnline={friend.isOnline}
           avatar={friend.avatar}
           name={friend.name}
         />
@@ -22,9 +22,9 @@ FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      isOnline: PropTypes.bool,
-      avatar: PropTypes.string,
-      name: PropTypes.string,
+      isOnline: PropTypes.bool.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
     })
   ),
 };

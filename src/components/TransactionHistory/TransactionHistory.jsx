@@ -6,16 +6,16 @@ export const TransactionHistory = ({ items }) => {
   return (
     <table className={styles.transactionHistory}>
       <thead>
-        <tr className={styles.upperRow}>
+        <tr key="0" className={styles.upperRow}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
         </tr>
       </thead>
 
-      {items.map(({ amount, currency, id, type }) => (
+      {items.map(({ amount, currency, id, type }, index) => (
         <tbody className={styles.tablerow}>
-          <tr key={id} className={styles.bodyRow}>
+          <tr key={index + 1} className={styles.bodyRow}>
             <td>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>

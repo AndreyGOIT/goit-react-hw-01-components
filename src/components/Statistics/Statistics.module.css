@@ -8,6 +8,8 @@
   padding-bottom: 40px;
   width: 400px;
   background-color: rgb(215, 217, 218);
+  /* background-color: '#' + (Math.random() .toString(16) + '000000')
+    .substring(2, 8) .toUpperCase(); */
 }
 .insideBox {
   width: 280px;
